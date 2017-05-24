@@ -126,39 +126,32 @@ public class Aplicacion extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+    public void numeros(){
         float n1 = Float.parseFloat(txtN1.getText());
         float n2 = Float.parseFloat(txtN2.getText());
         u.num1 = n1;
         u.num2 = n2;
+    }
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        numeros();
         op.suma(u);
         lblRes.setText("El resultado es: " + op.suma(u));
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        float n1 = Float.parseFloat(txtN1.getText());
-        float n2 = Float.parseFloat(txtN2.getText());
-        u.num1 = n1;
-        u.num2 = n2;
+        numeros();
         op.resta(u);
         lblRes.setText("El resultado es: " + op.resta(u));
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        float n1 = Float.parseFloat(txtN1.getText());
-        float n2 = Float.parseFloat(txtN2.getText());
-        u.num1 = n1;
-        u.num2 = n2;
+        numeros();
         op.producto(u);
         lblRes.setText("El resultado es: " + op.producto(u));
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        float n1 = Float.parseFloat(txtN1.getText());
-        float n2 = Float.parseFloat(txtN2.getText());
-        u.num1 = n1;
-        u.num2 = n2;
+        numeros();
         op.division(u);
         lblRes.setText("El resultado es: " + op.division(u));
     }//GEN-LAST:event_jButton4ActionPerformed
