@@ -10,7 +10,7 @@ package calculadora1;
  * @author Fernando Vargas
  */
 public class Operaciones {
-    
+    //Jose Fernando Rocha Vargas
     public float suma(Usuario u){
         float suma = u.num1 + u.num2;
         return suma;
