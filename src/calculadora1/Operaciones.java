@@ -5,29 +5,47 @@
  */
 package calculadora1;
 
-/**
- *
- * @author Fernando Vargas
- */
 public class Operaciones {
-    //Jose Fernando Rocha Vargas
-    public float suma(Usuario u){
-        float suma = u.num1 + u.num2;
+    private float no1;
+    private float no2;
+    
+    public float getNo1() {
+        return no1;
+    }
+
+    public void setNo1(float no1) {
+        this.no1 = no1;
+    }
+
+    public float getNo2() {
+        return no2;
+    }
+
+    public void setNo2(float no2) {
+        this.no2 = no2;
+    }
+    public Operaciones(float no1, float no2){
+        this.no1 = no1;
+        this.no2 = no2;
+    }
+    
+        public float suma(){
+        float suma = 
         return suma;
     }
     
-    public float resta(Usuario u){
-        float resta = u.num1 - u.num2;
+    public float resta(){
+        float resta = ;
         return resta;
     }
     
-    public float producto(Usuario u){
-        float producto = u.num1 * u.num2;
+    public float producto(){
+        float producto =;
         return producto;
     }
     
-    public float division(Usuario u){
-        float division = u.num1 / u.num2;
+    public float division(){
+        float division = ;
         return division;
     }
 }

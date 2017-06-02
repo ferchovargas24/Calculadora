@@ -10,9 +10,6 @@ package calculadora1;
  * @author Fernando Vargas
  */
 public class Aplicacion extends javax.swing.JFrame {
-
-    Usuario u = new Usuario();
-    Operaciones op = new Operaciones();
     
     public Aplicacion() {
         initComponents();
@@ -127,33 +124,31 @@ public class Aplicacion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     public void numeros(){
-        float n1 = Float.parseFloat(txtN1.getText());
-        float n2 = Float.parseFloat(txtN2.getText());
-        u.num1 = n1;
-        u.num2 = n2;
+        
+        Operaciones op = new Operaciones(Float.parseFloat(txtN1.getText()),Float.parseFloat(txtN2.getText()));
     }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         numeros();
-        op.suma(u);
-        lblRes.setText("El resultado es: " + op.suma(u));
+        op.suma();
+        lblRes.setText("El resultado es: " + op.suma());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         numeros();
         op.resta(u);
-        lblRes.setText("El resultado es: " + op.resta(u));
+        lblRes.setText("El resultado es: " + op.resta());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         numeros();
-        op.producto(u);
-        lblRes.setText("El resultado es: " + op.producto(u));
+        op.producto();
+        lblRes.setText("El resultado es: " + op.producto());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         numeros();
         op.division(u);
-        lblRes.setText("El resultado es: " + op.division(u));
+        lblRes.setText("El resultado es: " + op.division());
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
