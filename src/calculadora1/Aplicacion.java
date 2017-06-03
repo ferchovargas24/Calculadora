@@ -123,32 +123,29 @@ public class Aplicacion extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void numeros(){
-        
+    public Operaciones oprcn(){
         Operaciones op = new Operaciones(Float.parseFloat(txtN1.getText()),Float.parseFloat(txtN2.getText()));
+        return op;
     }
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        numeros();
-        op.suma();
+        Operaciones op = new Operaciones(Float.parseFloat(txtN1.getText()),Float.parseFloat(txtN2.getText()));
         lblRes.setText("El resultado es: " + op.suma());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        numeros();
-        op.resta(u);
-        lblRes.setText("El resultado es: " + op.resta());
+        oprcn();
+        lblRes.setText("El resultado es: " + oprcn().resta());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        numeros();
-        op.producto();
-        lblRes.setText("El resultado es: " + op.producto());
+        oprcn();
+        lblRes.setText("El resultado es: " + oprcn().producto());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        numeros();
-        op.division(u);
-        lblRes.setText("El resultado es: " + op.division());
+        oprcn();
+        lblRes.setText("El resultado es: " + oprcn().division());
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

@@ -24,28 +24,29 @@ public class Operaciones {
     public void setNo2(float no2) {
         this.no2 = no2;
     }
+    
     public Operaciones(float no1, float no2){
         this.no1 = no1;
         this.no2 = no2;
     }
     
         public float suma(){
-        float suma = 
+        float suma = getNo1() + getNo2();
         return suma;
     }
     
     public float resta(){
-        float resta = ;
+        float resta = getNo1() - getNo2();
         return resta;
     }
     
     public float producto(){
-        float producto =;
+        float producto = getNo1() * getNo2();;
         return producto;
     }
     
     public float division(){
-        float division = ;
+        float division = getNo1() / getNo2();;
         return division;
     }
 }
